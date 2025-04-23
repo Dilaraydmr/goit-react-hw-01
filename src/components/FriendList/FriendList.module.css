@@ -1,0 +1,13 @@
+.FriendList {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.friendAmigos{
+    display: flex;
+flex-direction: row;
+gap: 10px;
+}
