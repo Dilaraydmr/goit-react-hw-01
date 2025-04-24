@@ -1,0 +1,32 @@
+.transactionHistory {
+  width: 500%;
+  border-collapse: collapse;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+.transactionHistory__Head {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: left;
+}
+
+.transactionHistory__back {
+  padding: 12px;
+  border: 1px solid #413f3f;
+  text-align: center;
+}
+
+.transactionHistory__row:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+.transactionHistory__row:nth-child(odd) {
+  background-color: white;
+}
+
+.transaction__flex {
+  padding: 10px 12px;
+  border: 1px solid #100f0f;
+  text-align: center;
+}

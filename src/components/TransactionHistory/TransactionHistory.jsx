@@ -3,23 +3,23 @@ import * as Clara from './Transaction.module.css';
 
 const TransactionHistory = ({ items }) => {
     return (
-        <table>
+        <table className={ Clara.transactionHistory}>
             <thead>
-                <tr>
-                    <th>Type</th>
-                    <th>Amount</th>
-                    <th>Currency</th>
+                <tr className={ Clara.transactionHistory__Head}> 
+                    <th className={Clara.transactionHistory__back}>Type</th>
+                    <th className={Clara.transactionHistory__back}>Amount</th>
+                    <th className={Clara.transactionHistory__back}>Currency</th>
                 </tr>
             </thead>
 
             <tbody>
                 {items.map((item, index) => {
                     return (
-                        <tr key={index}>
+                        <tr key={index} className={Clara.transactionHistory__row}> 
 
-                            <td>{item.type}</td>
-                            <td>{item.amount}</td>
-                            <td>{item.currency}</td>
+                            <td className={Clara.transaction__flex}>{item.type}</td>
+                            <td className={Clara.transaction__flex}>{item.amount}</td>
+                            <td className={Clara.transaction__flex}>{item.currency}</td>
                         </tr>
                     )
                 }
